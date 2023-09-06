@@ -1,0 +1,15 @@
+img{
+    width: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.text-container{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}

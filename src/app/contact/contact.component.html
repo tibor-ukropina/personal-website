@@ -1,0 +1,42 @@
+
+<div class="container">
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+
+        <label for="fullname">Name</label>
+        <input type="text" 
+        name="firstname" 
+        placeholder="Your name.." 
+        [(ngModel)]="name" 
+        #nameInput="ngModel"
+        required>
+
+        <div class="error-message" *ngIf="nameInput.invalid &&nameInput.dirty">
+            Your name is required
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Your email.." 
+        [(ngModel)]="email"
+        #emailInput="ngModel"
+        email
+        required>
+
+        <div class="error-message" *ngIf="emailInput.invalid &&emailInput.dirty">
+            Your email is required
+        </div>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" 
+        name="subject" 
+        placeholder="Write something.." 
+        style="height:200px" 
+        [(ngModel)]="message"
+        required></textarea>
+
+        <input [disabled]="contactForm.invalid" type="submit" value="Submit">
+
+    </form>
+</div>

@@ -1,0 +1,33 @@
+.container{
+    margin-top: 3%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 20%;
+    height: 20%;
+}
+
+p{
+    width: 65%;
+}
+
+#td #iconomics{
+    width: 16%;
+    height: 16%;
+}
+
+#td{
+    padding-left: 7px;
+}
+
+#iconomics{
+    padding-right: 7px;
+}
+
+#lastContainer{
+    padding-bottom: 20px;
+}
