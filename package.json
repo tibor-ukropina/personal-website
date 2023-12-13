@@ -2,11 +2,9 @@
   "name": "personal-website",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "node server.js",
+    "build": "ng build --prod",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
