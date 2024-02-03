@@ -1,21 +1,30 @@
-.gfg {
-    position: relative;
-    display: inline-block; /* Ensures the container fits the size of the image */
-}
+.home-container{
+  position: relative;
+  text-align: center;
+  color: white;
+  display: inline-block;
 
-img {
-    width: 50%; /* Make the image take full width of its container */
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
+  img{
+    width: 50%;
+  }
 
-.text-container {
+  .home-text {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position to truly center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: black;
     padding: 10px;
     border-radius: 10px;
-    color: white; /* Optional: Change text color for better visibility */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .home-text{
+
+    transform: translate(-50%, 0%) !important;
+
+  }
 }
